@@ -1,0 +1,29 @@
+//header的banner
+.banner{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/hbanner.jpg);
+}
+.bg-cover{ 
+    background-position: center 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+//營區服務
+.homeserve-img{
+    &:hover{
+        .homeserve-text{
+            opacity: 1;
+            transition: all .3s;
+            border-radius: 0;
+        }
+    }
+    .homeserve-text{
+        opacity: 0;
+        transition: all .3s;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+    }
+}

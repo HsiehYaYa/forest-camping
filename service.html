@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="zh-tw">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>與森對話</title>
+
+        <!-- web icon -->
+        <link rel="shortcut icon" href="./images/campingicon.png" />
+
+        <!-- google字體 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Noto+Serif+TC:wght@200;400;600&family=Nunito:wght@200;400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+
+        <!-- bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+        <!-- 本站使用的css -->
+        <link rel="stylesheet" href="./stylesheets/all.css">
+
+        <!-- AOS視差滾動工具 -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    </head>
+    <body>
+
+        <!-- 導覽列 -->
+        <nav class="navbar navbar-expand-lg bg-white shadow sticky-top">
+            <div class="container"> 
+                <h1 class="logo mb-0">
+                    <a href="./index.html" class="navbar-brand">
+                        <img src="./images/campingicon.png" class="logoicon pb-2" alt="logo">
+                        與森對話
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-3 mt-lg-auto" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
+                            <a href="index.html" class="nav-link fs-7">首頁</a>
+                        </li>
+                        <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
+                            <a href="notice.html" class="nav-link fs-7">入營須知</a>
+                        </li>
+                        <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
+                            <a href="service.html" class="nav-link fs-7">服務項目</a>
+                        </li>
+                        <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
+                            <a href="campsite.html" class="nav-link fs-7">營位介紹</a>
+                        </li>
+                        <li class="nav-item mx-4 py-3 w-100 w-lg-auto border-top border-top-lg-0 text-center">
+                            <a href="planform.html" class="px-3 btn btn-warning rounded-pill fs-7 zoom-out">預約營位</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- header -->
+        <header class="mb-6  justify-content-center">
+            <div class="mb-5 bg-linear"></div>
+            <div class="container text-center">
+                <p class="mb-0 text-uppercase subtitle">The Forest / Service</p>
+                <h3 class="mb-3 title">服務項目</h3>
+                <p class="fw-lighter">
+                    在這片大自然中，我們開闢一座於翠綠樹林間的露營營地。<br>
+                    我們悉心為您編織了一系列的服務項目<br>
+                    希望能為您的露營之旅增添一絲浪漫與驚喜。
+                </p>
+            </div>
+        </header>
+
+        <section class="mb-9">
+            <div class="container">
+                <div class="row tabpanel g-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-12 col-lg-3 mb-5">
+                        <!-- List group -->
+                        <div class="list-group pe-5" id="myList" role="tablist">
+                            <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#all" role="tab">全部項目</a>
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#rent" role="tab">租借服務</a>
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#buy" role="tab">買賣相關事務</a>
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#activity" role="tab">不定期活動</a>
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#device" role="tab">營區設備</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 justify-content-center">
+                         <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="all" role="tabpanel">
+                                <div class="row row-cols-1 row-cols-lg-2 g-4">
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve01.jpg" class="img-fluid" alt="提供木材">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">提供木材</h4>
+                                            <p class="fs-7 fw-lighter">特定營位可以使用營火，如需木材請至服務區購買。</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve02.jpg" class="img-fluid" alt="帳篷組合租借">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">帳篷組合租借</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                租借帳篷皆提供搭設教學，組合內容包含帳篷本體、睡袋、地墊，如有需要請提前預約。<br>(價格請來電詢問)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve03.jpg" class="img-fluid" alt="無料咖啡品嚐">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">無料咖啡品嚐</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                營主有種植咖啡樹，因此會不定期提供自烘的咖啡豆可供購買和免費的手沖的咖啡供大家品嚐。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve04.jpg" class="img-fluid" alt="烤肉食材組合">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">烤肉食材組合</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                我們有提供烤肉食材代訂的服務，如有需要請提前預訂。(價格請來電詢問)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve05.jpg" class="img-fluid" alt="販賣部">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">販賣部</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                服務區有販賣生活用品及電池、零食、泡麵。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve06.jpg" class="img-fluid" alt="其他器材出租">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">其他器材出租</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                如需租任露營用品，如桌椅、營燈、營釘等等物品，歡迎至服務區洽詢。(部分物品數量有限，可提前預約)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve07.jpg" class="img-fluid" alt="螢火蟲季節導覽">
+                                            </div>                             
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">螢火蟲季節導覽</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                夏季夜晚是螢火蟲出沒季節，將由專人帶領到秘境觀賞夏夜的螢火蟲。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve08.jpg" class="img-fluid" alt="公共冰箱">
+                                            </div>    
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">公共冰箱</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                營區有提供冷藏冰箱和冷凍冰箱，但不服保管責任。如遇停電或冰箱損壞，造成食材壞掉，皆退還訂金做為賠償。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve09.jpg" class="img-fluid" alt="公共廁所">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">公共廁所</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                營區廁所會有專人定時打掃，保持環境整潔。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve10.jpg" class="img-fluid" alt="盥洗室">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">盥洗室</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                公共沐浴間接附有洗髮乳和沐浴乳、吹風機，還有供應全天候的熱水。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="rent" role="tabpanel">
+                                <div class="row row-cols-1 row-cols-lg-2 g-4">
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve02.jpg" class="img-fluid" alt="帳篷組合租借">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">帳篷組合租借</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                租借帳篷皆提供搭設教學，組合內容包含帳篷本體、睡袋、地墊，如有需要請提前預約。<br>(價格請來電詢問)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve06.jpg" class="img-fluid" alt="其他器材出租">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">其他器材出租</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                如需租任露營用品，如桌椅、營燈、營釘等等物品，歡迎至服務區洽詢。(部分物品數量有限，可提前預約)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="buy" role="tabpanel">
+                                <div class="row row-cols-1 row-cols-lg-2 g-4">
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve01.jpg" class="img-fluid" alt="提供木材">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">提供木材</h4>
+                                            <p class="fs-7 fw-lighter">特定營位可以使用營火，如需木材請至服務區購買。</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve04.jpg" class="img-fluid" alt="烤肉食材組合">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">烤肉食材組合</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                我們有提供烤肉食材代訂的服務，如有需要請提前預訂。(價格請來電詢問)
+                                            </p>
+                                        </div>                                    
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve05.jpg" class="img-fluid" alt="販賣部">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">販賣部</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                服務區有販賣生活用品及電池、零食、泡麵。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="activity" role="tabpanel">
+                                <div class="row row-cols-1 row-cols-lg-2 g-4">
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve03.jpg" class="img-fluid" alt="無料咖啡品嚐">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">無料咖啡品嚐</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                營主有種植咖啡樹，因此會不定期提供自烘的咖啡豆可供購買和免費的手沖的咖啡供大家品嚐。
+                                            </p>
+                                        </div> 
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve07.jpg" class="img-fluid" alt="螢火蟲季節導覽">
+                                            </div>                             
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">螢火蟲季節導覽</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                夏季夜晚是螢火蟲出沒季節，將由專人帶領到秘境觀賞夏夜的螢火蟲。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="device" role="tabpanel">
+                                <div class="row row-cols-1 row-cols-lg-2 g-4">
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve08.jpg" class="img-fluid" alt="公共冰箱">
+                                            </div>    
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">公共冰箱</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                營區有提供冷藏冰箱和冷凍冰箱，但不服保管責任。如遇停電或冰箱損壞，造成食材壞掉，皆退還訂金做為賠償。
+                                            </p>
+                                        </div> 
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve09.jpg" class="img-fluid" alt="公共廁所">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">公共廁所</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                營區廁所會有專人定時打掃，保持環境整潔。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <div class="img-zoomin">
+                                                <img src="./images/serve10.jpg" class="img-fluid" alt="盥洗室">
+                                            </div>
+                                            <h4 class="f-Serif fs-5 fw-bold mb-0 mt-3">盥洗室</h4>
+                                            <p class="fs-7 fw-lighter">
+                                                公共沐浴間接附有洗髮乳和沐浴乳、吹風機，還有供應全天候的熱水。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="bg-grayeee">
+                <div class="container">
+                    <div class="py-5 row justify-content-center align-items-center">  
+                        <div class="col-lg-5 text-center d-none d-lg-block">
+                            <img src="./images/picture-01-b.png" style="width: 80%;" alt="與森對話大logo">
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-column justify-content-center text-center text-lg-start">
+                                <div class="mb-4">
+                                    <p class="mb-0 text-uppercase fs-8">
+                                        Talking to the forest Camp
+                                    </p>
+                                    <h2>與森對話</h2>
+                                </div>
+                                <ul class="mb-0 list-unstyled fs-7 lh-lg fw-lighter">
+                                    <li>
+                                        <a href="tel:+886-000000000" class="text-decoration-none text-dark">
+                                            <i class="bi bi-telephone-fill me-2"></i>電話：0900-123456
+                                        </a>
+                                    </li>
+                                    <li><i class="bi bi-clock-fill me-2"></i>聯絡時間：9:00~18:00</li>
+                                    <li><i class="bi bi-house-door-fill me-2"></i>地址：苗栗縣泰安鄉某某道路上</li>
+                                    <li><i class="bi bi-car-front-fill me-2"></i>如何抵達：營區在深山之中，因此請開車前往本營區，營位旁皆可停放一台車輛</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="bg-dark py-3">
+                <p class="text-center align-items-center text-white fs-8 mb-0">
+                    Copyright © 2023 與森對話.All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <!-- java -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+         <!-- AOS視差滾動工具 -->
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+             AOS.init();
+         </script>
+
+    </body>
+</html>

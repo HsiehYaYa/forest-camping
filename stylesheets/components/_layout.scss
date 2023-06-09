@@ -1,0 +1,117 @@
+body{
+    letter-spacing: .1rem;
+    font-family: 'Noto Sans TC' , 'Nunito';
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.8;
+}
+
+
+//裝飾線字體元件
+.f-Serif{
+    font-family: 'Noto Serif TC' , 'Playfair Display',Serif;
+}
+
+//數字字體
+.f-number{
+    font-family: 'Poppins', sans-serif;
+}
+
+//中文大標題
+.title{
+    font-family: 'Noto Serif TC',Serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    text-indent: .5rem; 
+}
+
+//英文小標題
+.subtitle{
+    font-family:'Playfair Display',Serif;
+    font-size: 0.625rem;
+}
+
+//黃色漸層色條
+.bg-linear{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,206,50,1) 100%);
+}
+
+//放大動態效果
+.zoom-in{
+    transition: 0.4s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+//縮小動態效果
+.zoom-out{
+    transition: 0.4s;
+    &:hover{
+        transform: scale(0.95);
+    }
+}
+
+//圖片hover放大
+.img-zoomin{
+    max-width: 100%;
+    overflow: hidden;
+    img{
+        transform: scale(1);
+        transition: .8s ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+//fadein淡入特效
+.fadein{
+    animation: fadein 3s linear 0s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+//導航列
+.logo{
+    font-weight: 400;
+    letter-spacing:.3rem;
+    .logoicon{
+        width: 30px;
+    }
+}
+.navbar-nav a{
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 5px;
+        height: 0;
+        border-bottom: 2px solid $warning;
+        transition: 0.5s;
+    }
+    &:hover:after{
+        left: 5%;
+        right: 5%;  
+    }
+}
+@media(max-width:992px){
+    .navbar-nav a::after{
+        display: none;
+    }
+}
