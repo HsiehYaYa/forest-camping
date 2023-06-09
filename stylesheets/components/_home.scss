@@ -1,5 +1,6 @@
 //header的banner
 .banner{
+    max-width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -7,11 +8,10 @@
     background-image: url(../images/hbanner.jpg);
 }
 .bg-cover{ 
-    background-position: center 60px;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 //營區服務
 .homeserve-img{
     &:hover{
