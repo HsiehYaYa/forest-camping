@@ -4411,7 +4411,7 @@ textarea.form-control-lg {
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.7rem;
+  --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
@@ -5662,19 +5662,21 @@ textarea.form-control-lg {
 .list-group {
   --bs-list-group-color: #212529;
   --bs-list-group-bg: #fff;
-  --bs-list-group-border-color: rgba(0, 0, 0, 0.125);
+  --bs-list-group-border-color: transparent;
+  --bs-list-group-border-width: 1px;
+  --bs-list-group-border-radius: 0.375rem;
   --bs-list-group-item-padding-x: 1rem;
   --bs-list-group-item-padding-y: 0.5rem;
-  --bs-list-group-action-color: #495057;
-  --bs-list-group-action-hover-color: #495057;
-  --bs-list-group-action-hover-bg: #f8f9fa;
+  --bs-list-group-action-color: #212529;
+  --bs-list-group-action-hover-color: #adb5bd;
+  --bs-list-group-action-hover-bg: transparent;
   --bs-list-group-action-active-color: #212529;
-  --bs-list-group-action-active-bg: #e9ecef;
+  --bs-list-group-action-active-bg: #FFCE33;
   --bs-list-group-disabled-color: #6c757d;
   --bs-list-group-disabled-bg: #fff;
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #0d6efd;
-  --bs-list-group-active-border-color: #0d6efd;
+  --bs-list-group-active-bg: #FFCE33;
+  --bs-list-group-active-border-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5703,11 +5705,13 @@ textarea.form-control-lg {
 }
 .list-group-item-action:hover, .list-group-item-action:focus {
   z-index: 1;
-  color: #888;
+  color: var(--bs-list-group-action-hover-color);
   text-decoration: none;
+  background-color: var(--bs-list-group-action-hover-bg);
 }
 .list-group-item-action:active {
   color: var(--bs-list-group-action-active-color);
+  background-color: var(--bs-list-group-action-active-bg);
 }
 
 .list-group-item {
@@ -5718,9 +5722,6 @@ textarea.form-control-lg {
   text-decoration: none;
   background-color: var(--bs-list-group-bg);
   border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  border-radius: 20px;
 }
 .list-group-item:first-child {
   border-top-left-radius: inherit;
@@ -5738,8 +5739,8 @@ textarea.form-control-lg {
 .list-group-item.active {
   z-index: 2;
   color: var(--bs-list-group-active-color);
-  background-color: #FFCE33;
-  border-radius: 20px;
+  background-color: var(--bs-list-group-active-bg);
+  border-color: var(--bs-list-group-active-border-color);
 }
 .list-group-item + .list-group-item {
   border-top-width: 0;
@@ -13987,6 +13988,10 @@ p {
   font-size: 0.625rem;
 }
 
+.bigspacing {
+  letter-spacing: 0.5rem;
+}
+
 .bg-linear {
   width: 100%;
   height: 60px;
@@ -13995,8 +14000,8 @@ p {
 }
 
 .zoom-in {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .zoom-in:hover {
   -webkit-transform: scale(1.05);
@@ -14004,8 +14009,8 @@ p {
 }
 
 .zoom-out {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .zoom-out:hover {
   -webkit-transform: scale(0.95);
@@ -14019,8 +14024,8 @@ p {
 .img-zoomin img {
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .img-zoomin img:hover {
   -webkit-transform: scale(1.2);
@@ -14028,8 +14033,8 @@ p {
 }
 
 .fadein {
-  -webkit-animation: fadein 3s linear 0s;
-          animation: fadein 3s linear 0s;
+  -webkit-animation: fadein 1.5s linear 0s;
+          animation: fadein 1.5s linear 0s;
 }
 
 @-webkit-keyframes fadein {
@@ -14082,6 +14087,7 @@ p {
   }
 }
 .banner {
+  max-width: 100%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -14090,9 +14096,14 @@ p {
 }
 
 .bg-cover {
-  background-position: center 60px;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.banner-title {
+  font-family: "Caveat", cursive;
+  letter-spacing: 0rem;
 }
 
 .homeserve-img:hover .homeserve-text {
@@ -14107,51 +14118,4 @@ p {
   transition: all 0.3s;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.1)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
-}
-
-.notice-banner {
-  width: 100%;
-  height: 400px;
-  background: url(../images/notice-banner.jpg) center/cover;
-}
-
-.notice-title {
-  letter-spacing: 0.5rem;
-  text-indent: 0.5rem;
-}
-
-.campbanner-a {
-  width: 100%;
-  height: 400px;
-  background: url(../images/camp-a.jpg) center/cover;
-}
-
-.campbanner-b {
-  width: 100%;
-  height: 400px;
-  background: url(../images/camp-b.jpg) center/cover;
-}
-
-.campbanner-c {
-  width: 100%;
-  height: 400px;
-  background: url(../images/camp-c.jpg) center/cover;
-}
-
-.campbanner-d {
-  width: 100%;
-  height: 400px;
-  background: url(../images/camp-d.jpg) center/cover;
-}
-
-.campbanner-e {
-  width: 100%;
-  height: 400px;
-  background: url(../images/camp-e.jpg) bottom/cover;
-}
-
-.campbanner-f {
-  width: 100%;
-  height: 400px;
-  background: url(../images/camp-f.jpg) center/cover;
 }/*# sourceMappingURL=all.css.map */

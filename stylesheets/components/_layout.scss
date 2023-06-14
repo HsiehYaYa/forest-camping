@@ -36,6 +36,11 @@ p{
     font-size: 0.625rem;
 }
 
+//較大字距
+.bigspacing{
+    letter-spacing: .5rem;
+}
+
 //黃色漸層色條
 .bg-linear{
     width: 100%;
@@ -45,7 +50,7 @@ p{
 
 //放大動態效果
 .zoom-in{
-    transition: 0.4s;
+    transition: 0.3s;
     &:hover{
         transform: scale(1.05);
     }
@@ -53,7 +58,7 @@ p{
 
 //縮小動態效果
 .zoom-out{
-    transition: 0.4s;
+    transition: 0.3s;
     &:hover{
         transform: scale(0.95);
     }
@@ -65,7 +70,7 @@ p{
     overflow: hidden;
     img{
         transform: scale(1);
-        transition: .8s ease-in-out;
+        transition: .5s ease-in-out;
         &:hover{
             transform: scale(1.2);
         }
@@ -74,7 +79,7 @@ p{
 
 //fadein淡入特效
 .fadein{
-    animation: fadein 3s linear 0s;
+    animation: fadein 1.5s linear 0s;
 }
 @keyframes fadein {
     from {

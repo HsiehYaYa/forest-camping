@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-lg bg-white shadow sticky-top">
             <div class="container"> 
                 <h1 class="logo mb-0">
-                    <a href="./index.html" class="navbar-brand">
+                    <a href="./index.html" class="fs-3 text-dark">
                         <img src="./images/campingicon.png" class="logoicon pb-2" alt="logo">
                         與森對話
                     </a>
@@ -36,9 +36,6 @@
                 </button>
                 <div class="collapse navbar-collapse mt-3 mt-lg-auto" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-center">
-                        <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
-                            <a href="index.html" class="nav-link fs-7">首頁</a>
-                        </li>
                         <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
                             <a href="notice.html" class="nav-link fs-7">入營須知</a>
                         </li>
@@ -99,10 +96,10 @@
                                 <div class="invalid-feedback">必須填寫</div>
                             </div>
                             <div class="col-lg-6">
-                                <label for="time" class="form-label">
+                                <label for="campsite" class="form-label">
                                     營位區域
                                 </label>
-                                <select id="time" class="form-select" aria-label="Default select example" required>
+                                <select id="campsite" class="form-select" aria-label="Default select example" required>
                                     <option selected disabled value="">選擇營位...</option>
                                     <option value="1">景觀A區</option>
                                     <option value="2">景觀B區</option>
@@ -114,10 +111,10 @@
                                 <div class="invalid-feedback">請選取</div>
                             </div>
                             <div class="col-lg-6">
-                                <label for="time" class="form-label">
+                                <label for="campunmber" class="form-label">
                                     營位數量
                                 </label>
-                                <select id="time" class="form-select" aria-label="Default select example" required>
+                                <select id="campunmber" class="form-select" aria-label="Default select example" required>
                                     <option selected disabled value="">選擇數量...</option>
                                     <option value="1">1帳</option>
                                     <option value="2">2帳</option>
@@ -131,49 +128,49 @@
                                 <div class="invalid-feedback">請選取</div>
                             </div>
                             <div class="col-lg-12">
-                                <label for="buyserve" class="form-label d-block">
+                                <label for="rentalcamp" class="form-label d-block">
                                     租借帳篷組合
                                 </label>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label fw-lighter" for="inlineCheckbox1">
+                                    <input class="form-check-input" type="checkbox" id="rentalcampA" value="option1">
+                                    <label class="form-check-label fw-lighter" for="rentalcampA">
                                         組合Ａ內容 (1個四人帳、1個天幕、2張椅子、1張桌子、1顆營燈)
                                     </label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                    <label class="form-check-label fw-lighter" for="inlineCheckbox2">
+                                    <input class="form-check-input" type="checkbox" id="rentalcampB" value="option2">
+                                    <label class="form-check-label fw-lighter" for="rentalcampB">
                                         組合B內容 (1個四人帳、1個天幕、2張椅子、1張桌子、2顆營燈、2份睡袋)
                                     </label>
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <label for="buyserve" class="form-label d-block">
+                                <label for="rentalitem" class="form-label d-block">
                                     租借露營器材 <span class="fs-8 text-secondary">(數量請填寫在備註)</span>
                                 </label>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label fw-lighter" for="inlineCheckbox1">帳篷</label>
+                                    <input class="form-check-input" type="checkbox" id="rentalitem1" value="option1">
+                                    <label class="form-check-label fw-lighter" for="rentalitem1">帳篷</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                    <label class="form-check-label fw-lighter" for="inlineCheckbox2">天幕</label>
+                                    <input class="form-check-input" type="checkbox" id="rentalitem2" value="option2">
+                                    <label class="form-check-label fw-lighter" for="rentalitem2">天幕</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                    <label class="form-check-label fw-lighter" for="inlineCheckbox3">營燈</label>
+                                    <input class="form-check-input" type="checkbox" id="rentalitem3" value="option3">
+                                    <label class="form-check-label fw-lighter" for="rentalitem3">營燈</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option4">
-                                    <label class="form-check-label fw-lighter" for="inlineCheckbox4">桌子</label>
+                                    <input class="form-check-input" type="checkbox" id="rentalitem4" value="option4">
+                                    <label class="form-check-label fw-lighter" for="rentalitem4">桌子</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option5">
-                                    <label class="form-check-label fw-lighter" for="inlineCheckbox5">椅子</label>
+                                    <input class="form-check-input" type="checkbox" id="rentalitem5" value="option5">
+                                    <label class="form-check-label fw-lighter" for="rentalitem5">椅子</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option6">
-                                    <label class="form-check-label fw-lighter" for="inlineCheckbox6">睡袋</label>
+                                    <input class="form-check-input" type="checkbox" id="rentalitem6" value="option6">
+                                    <label class="form-check-label fw-lighter" for="rentalitem6">睡袋</label>
                                 </div>
                             </div>
                             <div class="col-lg-12">
@@ -228,10 +225,10 @@
             </div>
         </footer>
 
-        <!-- java -->
+        <!-- javascript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         
-        <!-- 提交表單的js-->
+        <!-- 提交表單的javascript-->
         <script>
             // Example starter JavaScript for disabling form submissions if there are invalid fields
             (function () {
